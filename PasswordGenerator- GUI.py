@@ -75,6 +75,8 @@ def guiwindow():
         elif len(ent2.get()) > 0:
             ent2.delete(0, 'end')
             randomlists()
+        elif (var1.get() + var2.get() + var3.get()) > int(ent1.get()):
+            tkinter.messagebox.showinfo("Error", "Choose more characters")
         else:
             randomlists()
 
